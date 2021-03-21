@@ -16,14 +16,14 @@ body {
 }
 a {
   margin: 20px 40px 20px 20px;
-  font-size: 30px;
+  font-size: 0.6rem;
   padding-right: 20px;
   text-decoration: none;
   color: white;
 }
 
 #rop {
-  margin-top: 200px;
+  margin-top: 5px;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 100%;
@@ -37,11 +37,12 @@ a {
   background-color: blue;
   display: grid;
   justify-content: center;
+  justify-items: center;
   margin: 20px;
 }
 #big-image {
-  height: 600px;
-  width: auto;
+  height: auto;
+  width: 90%;
 }
 
 #form-div {
@@ -64,6 +65,7 @@ a {
 #a-inline {
   text-decoration: none;
   color: aquamarine;
+  font-size: 1rem;
 }
 
 h3 {
@@ -71,42 +73,42 @@ h3 {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 1rem;
 }
 
 #email {
   width: 70%;
-  height: 25px;
-  border-radius: 10px;
-  font-size: 25px;
-  padding: 30px;
+  height: 0.3rem;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
   margin: 5px;
 }
 
 #password {
   width: 70%;
-  height: 25px;
-  border-radius: 10px;
-  font-size: 25px;
-  padding: 30px;
+  height: 0.3rem;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
   margin: 5px;
 }
-
 #cpassword {
   width: 70%;
-  height: 25px;
-  border-radius: 10px;
-  font-size: 25px;
-  padding: 30px;
+  height: 0.3rem;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
   margin: 5px;
 }
 
 #submit {
   width: 80%;
-  height: 90px;
+  height: 0.4rem;
   border-radius: 10px;
   font-size: 25px;
-  padding: 30px;
+  padding: 15px;
+  padding-bottom: 40px;
   background-color: green;
   color: white;
   margin: 15px auto 30px auto;
@@ -122,8 +124,8 @@ h4 {
 
 #video {
   margin: 40px;
-  width: 720px;
-  height: 450px;
+  width: 40rem;
+  height: 20rem;
 }
 
 footer {
@@ -137,6 +139,161 @@ footer {
 
 @media (min-width: 768px) {
   #rop {
-    margin-top: 170px;
+    margin-top: 20rem;
+  }
+
+  #video-div {
+    width: 100%;
+    background-color: pink;
+    display: grid;
+    justify-content: center;
+    margin: 40px;
+  }
+
+  #video {
+    margin: 40px;
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  a {
+    margin: 20px 40px 20px 20px;
+    font-size: 1rem;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  #rop {
+    margin: auto;
+    margin-top: 10rem;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 0.3rem;
+    width: 100%;
+    background-color: yellow;
+  }
+
+  #big-image-div {
+    background-color: blue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    grid-area: 1/1/2/2;
+  }
+  #big-image {
+    width: 80%;
+    height: auto;
+  }
+
+  #form-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    margin: 20px;
+    grid-area: 1/2/2/3;
+  }
+
+  #form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+  }
+
+  #a-inline {
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    grid-area: 2/1/3/3;
+    font-size: 30px;
+  }
+
+  #email {
+    width: 70%;
+    height: 0.3rem;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0.1em;
+  }
+
+  #password {
+    width: 70%;
+    height: 0.3rem;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0.3rem;
+  }
+
+  #cpassword {
+    width: 70%;
+    height: 0.3rem;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0.3rem;
+  }
+
+  #submit {
+    width: 80%;
+    height: 0.3rem;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 30px;
+    background-color: green;
+    color: white;
+    margin: 15px auto 30px auto;
+  }
+
+  #submit:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+
+  #video-div {
+    grid-area: 3/1/4/3;
+    width: 100%;
+    background-color: pink;
+    display: grid;
+    justify-content: center;
+    margin: 40px;
+  }
+
+  #video {
+    margin: 10px;
+    width: 60rem;
+    height: 30rem;
+  }
+
+  footer {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 }
