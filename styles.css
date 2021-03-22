@@ -1,8 +1,19 @@
+* {
+  box-sizing: border-box;
+}
 body {
   width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
   margin: 0;
+  padding: 0;
   font-family: poppins;
   font-weight: 100;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
 }
 #nav-bar {
   display: flex;
@@ -16,7 +27,7 @@ body {
 }
 a {
   margin: 20px 40px 20px 20px;
-  font-size: 0.6rem;
+  font-size: 40px;
   padding-right: 20px;
   text-decoration: none;
   color: white;
@@ -30,16 +41,17 @@ a {
   grid-template-rows: auto auto auto;
   justify-items: center;
   width: 100%;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 #big-image-div {
-  background-color: blue;
+  /*background-color: blue;*/
   display: grid;
   justify-content: center;
   justify-items: center;
   margin: 20px;
 }
+
 #big-image {
   height: auto;
   width: 90%;
@@ -47,9 +59,9 @@ a {
 
 #form-div {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   justify-items: center;
-  background-color: aqua;
+  background-color: rgba(10, 10, 10, 0.5);
   border-radius: 10px;
   width: 70%;
   margin: 20px;
@@ -65,7 +77,7 @@ a {
 #a-inline {
   text-decoration: none;
   color: aquamarine;
-  font-size: 1rem;
+  font-size: 40px;
 }
 
 h3 {
@@ -73,7 +85,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 40px;
 }
 
 #email {
@@ -116,7 +128,7 @@ h4 {
 
 #video-div {
   width: 100%;
-  background-color: pink;
+  /*background-color: pink;*/
   display: grid;
   justify-content: center;
   margin: 40px;
@@ -144,7 +156,7 @@ footer {
 
   #video-div {
     width: 100%;
-    background-color: pink;
+    /*background-color: pink;*/
     display: grid;
     justify-content: center;
     margin: 40px;
@@ -171,17 +183,17 @@ footer {
     margin-top: 10rem;
     padding-top: 50px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: auto auto auto;
     justify-content: center;
     justify-items: center;
     grid-gap: 0.3rem;
     width: 100%;
-    background-color: yellow;
+    /*background-color: yellow;*/
   }
 
   #big-image-div {
-    background-color: blue;
+    /*background-color: blue;*/
     display: grid;
     justify-items: center;
     align-items: center;
@@ -197,11 +209,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    background-color: aqua;
+    background-color: rgba(10, 10, 10, 0.5);
     border-radius: 10px;
     width: 70%;
     height: auto;
-    margin: 20px;
+    margin: 5px;
     grid-area: 1/2/2/3;
   }
 
@@ -276,7 +288,7 @@ footer {
   #video-div {
     grid-area: 3/1/4/3;
     width: 100%;
-    background-color: pink;
+    /* background-color: pink;*/
     display: grid;
     justify-content: center;
     margin: 40px;
