@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
+/*general carier of all the page elements*/
 body {
   width: 100%;
   display: grid;
@@ -75,6 +77,7 @@ a {
 }
 
 #a-inline {
+  /*to ensure that the link is not underlined*/
   text-decoration: none;
   color: aquamarine;
   font-size: 40px;
@@ -149,6 +152,8 @@ footer {
   justify-items: center;
 }
 
+/*The code below is the same wwith the general one
+just different attribute values to fit into a Tablet screen*/
 @media (min-width: 768px) {
   #rop {
     margin-top: 20rem;
@@ -169,6 +174,8 @@ footer {
   }
 }
 
+/*The code below is the same wwith the general one
+just different attribute values to fit into a Laptop screen*/
 @media (min-width: 1000px) {
   a {
     margin: 20px 40px 20px 20px;
